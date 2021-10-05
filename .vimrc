@@ -5,6 +5,7 @@ set undodir=.undo/,~/.undo/,/tmp//
 
 noremap s <Nop>
 noremap <leader>g "zyiw:grep -r <C-R>z .<CR><CR><CR>:copen<CR>
+noremap <leader>r "zyiw:%s/<C-R>z//g<Left><Left>
 noremap <leader>] <C-W><C-V><C-W>l<C-]>
 noremap <leader>b :browse oldfiles<CR>
 noremap <leader>v :Vexplore<CR>
@@ -12,7 +13,7 @@ noremap <leader>h :noh<CR>
 noremap <leader>q :q!<cr>
 nnoremap <leader>s :w<cr>
 nnoremap <leader>z :wq<cr>
-nnoremap <leader>r :so $MYVIMRC<cr>
+nnoremap <leader>v :so $MYVIMRC<cr>
 
 noremap <leader>p "0p
 noremap <leader>P "0P
@@ -30,7 +31,7 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 
 noremap ' 0i<Tab><C-c>
-noremap " 0i//<C-c>
+noremap <leader>' 0i//<C-c>
 
 noremap Q @q
 noremap <C-e> <C-W><C-V><C-W>l
